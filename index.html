@@ -5,97 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leira's Portofolio</title>
 </head>
+
 <body>
-    <div align = "center">
-        <h1>Welcome to my Portofolio</h1>
-        <a href="#AboutPage"> About</a>
-        <a href="#LearningPage"> Learn</a>
-        <a href="#ContactPage"> Contact</a>
+    <header>
+        <h1 style="text-align: center;">Welcome to my Portfolio</h1>
+        <nav style="text-align: center;">
+            <a href="#about">About</a> | 
+            <a href="#learning">Learn</a> | 
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#form">Form</a> |
+            <a href="#contact">Contact</a> 
+        </nav>
         <hr>
-        <a><img src = "PP.jpg" width="300" height="300"></a>
-        <h2>Hello I'm Ariel Yosua</h2>
-        <p><i>The logical mind serves as a human bullshit detector</i> - Jordan Belfort</p>
+    </header>
+
+    <section style="text-align: center;">
+        <figure>
+            <img src="PP.jpg" width="300" height="300" alt="Profile Picture">
+        </figure>
+        <h2>Hello, I'm Ariel Yosua</h2>
+        <blockquote cite="https://www.goodreads.com/author/show/232999.Jordan_Belfort">
+            <i>&ldquo;The logical mind serves as a human bullshit detector.&rdquo;</i> - Jordan Belfort
+        </blockquote>
         <hr>
-    </div>
-    <div id = "AboutPage">
-        <h2>About</h2>
-        <p><b>Hallooo</b> I'm Ariel Yosua, I'm Computer Science student at University of Pertamina, with a keen interest in analytics. 
-            I’m passionate about turning data into actionable insights through data analysis and machine learning, 
-            and I’m constantly building my expertise in these areas through academic work and hands-on projects.
-        <p>In my campus life, I hold onto a quote by Jordan Belfort "<i>The logical mind serves as a human bullshit detector</i>"            
-            This idea resonates deeply with me, as I believe that critical thinking and logical reasoning are essential tools for navigating both academic challenges and everyday situations.</p>
-        <p>
-    </div>
-    <hr>
-    <div id = "LearningPage">
-        <h2>What I Learn</h2>
-        <table border = "1">
-            <tr>
-                <th colspan="3"> What I Learn in Campus</th>
-            </tr>
-            <tr>
-                <th>Programming Language</th>
-                <th>Subject</th>
-                <th>Tools</th>
-            </tr>
-            <tr>
-                <td rowspan="7">
-                    <ol>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Java</li>
-                        <li>HTML</li>
-                        <li>C++</li>
-                    </ol>
-                </td>
-                <td>
-                    Information Systems
-                </td>
-                <td rowspan="7">Matpotlib, Cisco, Git, Jupyter, Excel, VSCode</td>
-            </tr>
-            <tr>
-                <td>Web programming</td>
-            </tr>
-            <tr>
-                <td>Design and Analysis of Algorithms</td>
-            </tr>
-            <tr>
-                <td>Introduction to Data Science</td>
-            </tr>
-            <tr>
-                <td>Software Project Management</td>
-            </tr>
-            <tr>
-                <td>Analysis and Design of Software</td>
-            </tr>
-            <tr>
-                <td>Energy Field Modeling</td>
-            </tr>
-            <tr>
-                <th colspan="3"> PROJECT</th>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <ol>
-                        <li>Calculator</li>
-                        <li>Visitor Prediction Model</li>
-                        <li>Resize Image</li>
-                        <li>Export Guidelines</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>  
-    </div>
-    <hr>
-    <div id = "ContactPage">
-        <h2>Contact</h2>
-        <p>You can contact me with the contact below:</p>
-        <ul>
-            <li><a href = "https://www.instagram.com/arielyosua_"
-                target = "_blank"> Instagram</a></li>
-            <li><a href = "https://www.linkedin.com/in/ariel-yosua-hasibuan-0b60b8263/"
-                target = "_blank"> LinkedIn</a></li>
-        </ul>
-    </div>
+    </section>
+
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+            <p><b>Hallooo</b> I'm Ariel Yosua, I'm Computer Science student at University of Pertamina, with a keen interest in analytics. 
+                I’m passionate about turning data into actionable insights through data analysis and machine learning, 
+                and I’m constantly building my expertise in these areas through academic work and hands-on projects.
+            <p>In my campus life, I hold onto a quote by Jordan Belfort "<i>The logical mind serves as a human bullshit detector</i>"            
+                This idea resonates deeply with me, as I believe that critical thinking and logical reasoning are essential tools for navigating both academic challenges and everyday situations.</p>
+            <p>
+        </article>
+        <hr>
+
+        <section id="learning">
+            <h2>What I Learn</h2>
+            <table border="1" style="width: 100%; text-align: center;">
+                <thead>
+                    <tr>
+                        <th style="padding: 10px;" colspan="3">What I Learn in Campus</th>
+                    </tr>
+                    <tr>
+                        <th style="padding: 10px;">Programming Languages</th>
+                        <th style="padding: 10px;">Subjects</th>
+                        <th style="padding: 10px;">Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="7">
+                            <ol>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>Java</li>
+                                <li>HTML</li>
+                                <li>C++</li>
+                            </ol>
+                        </td>
+                        <td>Information Systems</td>
+                        <td rowspan="7">Matplotlib, Cisco, Git, Jupyter, Excel, VSCode</td>
+                    </tr>
+                    <tr><td>Web Programming</td></tr>
+                    <tr><td>Design and Analysis of Algorithms</td></tr>
+                    <tr><td>Introduction to Data Science</td></tr>
+                    <tr><td>Software Project Management</td></tr>
+                    <tr><td>Analysis and Design of Software</td></tr>
+                    <tr><td>Energy Field Modeling</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="padding: 10px;" colspan="3">PROJECTS</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li>Calculator</li>
+                                <li>Visitor Prediction Model</li>
+                                <li>Resize Image</li>
+                                <li>Export Guidelines</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+
+         <section id = "multimedia">
+            <h2>Multimedia</h2>
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/VEJWE6cpqw0"
+                frameborder="0" allowfullscreen></iframe> 
+            <audio controls>
+                <source src="Different Heaven  Safe And Sound  House  NCS  Copyright Free Music (1).mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+         </section>
+        <hr>
+
+        <section id = "form">
+            <h2>Form</h2>
+            <p>Silahkan isi data Anda</p>
+            <form>
+                <table border="1" style="width: 50%; margin: auto;">
+                    <tr>
+                        <td style="padding: 10px;"><label for="name">Nama Lengkap:</label></td>
+                        <td style="padding: 10px;"><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><label for="password">Password:</label></td>
+                        <td style="padding: 10px;"><input type="password" id="password" name="password"></td>
+                    </tr>
+                        <td style="padding: 10px;">Program Studi:</td>
+                        <td style="padding: 10px;">
+                            <select name = "Prodi" id ="prodi">
+                                <option value="Ilmu Komputer">Ilmu Komputer</option>
+                                <option value="Teknik Kimia">Teknik Kimia</option>
+                                <option value="Manajemen">Manajemen</option>
+                                <option value="Hubungan Internasional">Hubungan Internasional</option>
+                                <option value="Teknik Elektro">Teknik Elektro</option>
+                                <option value="Komunikasi">Komunikasi</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td style="padding: 10px;">Jenis Kelamin:</td>
+                        <td style="padding: 10px;">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Laki-laki</label> <br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><label for="address">Alamat:</label></td>
+                        <td style="padding: 10px;"><textarea id="address" name="address" rows="3" cols="50" placeholder="Isi Alamat Anda"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Sudah bayar?</td>
+                        <td style="padding: 10px;">
+                            <input type="checkbox" id="paid" name="paid" value="yes">
+                            <label for="paid">Sudah</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center; padding: 10px;">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset"></input>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me on these platforms:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/arielyosua_" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/ariel-yosua-hasibuan-0b60b8263/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>&copy; 2024 Ariel Yosua | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
