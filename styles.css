@@ -8,10 +8,10 @@
 .container {
     display: grid;
     grid: 
-        "header header header" 
-        "header2 aside aside" 
-        "content aside aside" 
-        "footer footer footer";
+        "header header" 
+        "header2 aside" 
+        "content aside" 
+        "footer footer";
     gap: 20px;
     max-width: 1200px;
     margin: auto;
@@ -51,12 +51,39 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .profile {
     display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.profile-text h2 {
+    margin: 0;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.citation {
+    align-self: flex-end;
+    font-weight: bold;
 }
 
 .img1 {
@@ -71,6 +98,30 @@
     background-color: #eb9d9d;
     border-radius: 8px;
 }
+
+table ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+table td ul {
+    list-style-position: inside;
+}
+
+.learning {
+    margin-top: 20px;
+}
+
+.learning table {
+    background-color: #826363; /* Warna latar belakang tabel, ganti sesuai kebutuhan */
+    border-color: #333; /* Warna border */
+}
+
+.learning th, .learning td {
+    background-color: #f5b5b5; /* Warna latar belakang sel, ganti sesuai kebutuhan */
+    padding: 10px;
+}
+
 
 .about {
     grid-area: content;
@@ -89,7 +140,12 @@ aside {
 }
 
 aside > form {
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
     background-color: #7acece;
+    box-shadow: 0 4px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sidebar h2 {
@@ -102,4 +158,83 @@ aside > form {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #acd896;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus {
+    outline: none;
+    border-color: #7acece;
+    background-color: #ffffff;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 48%;
+}
+
+button[type="submit"] {
+    background-color: #2F4F4F;
+    color: #fff;
+}
+
+button[type="reset"] {
+    background-color: #2F4F4F;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }

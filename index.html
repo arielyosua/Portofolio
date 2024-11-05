@@ -23,14 +23,18 @@
     <section class = "header2">
         <div class = "profile">
             <img src="PP.jpg" width="300" height="300" alt="Profile Picture" class = "img1">
-            <h2>I'm Ariel Yosua</h2>
-            <hr>
-            <i>&ldquo;The logical mind serves as a human bullshit detector.&rdquo;</i>Jordan Belfort
+            <div class="profile-text">
+                <h2>I'm Ariel Yosua</h2>
+                <div class="quote">
+                    <span>The logical mind serves as a human bullshit detector.</span>
+                    <span class="citation">Jordan Belfort</span>
+                </div>
+            </div>
         </div>
     </section>        
 
     <main class = "content">
-        <div class = "about">
+        <div class = "about" id = "about">
             <h2>About Me</h2>
             <p><b>Hallooo</b> I'm Ariel Yosua, I'm Computer Science student at University of Pertamina, with a keen interest in analytics. 
                 I’m passionate about turning data into actionable insights through data analysis and machine learning, 
@@ -38,29 +42,23 @@
             <p>In my campus life, I hold onto a quote by Jordan Belfort "<i>The logical mind serves as a human bullshit detector</i>"            
                 This idea resonates deeply with me, as I believe that critical thinking and logical reasoning are essential tools for navigating both academic challenges and everyday situations.</p>
         </div>
-        <article id="about">
-            
-        </article>
 
-        <div class = "learning">
+        <div class = "learning" id = "learning">
             <h2>What I Learn</h2>
-            <table border="1" style="width: 100%; text-align: center;">
+            <table border = 1>
                 <tr>
-                    <th style="padding: 10px;" colspan="3">What I Learn in Campus</th>
-                </tr>
-                <tr>
-                    <th style="padding: 10px;">Programming Languages</th>
-                    <th style="padding: 10px;">Subjects</th>
-                    <th style="padding: 10px;">Tools</th>
+                    <th>Programming Languages</th>
+                    <th>Subjects</th>
+                    <th>Tools</th>
                 </tr>
                     <td rowspan="7">
-                        <ol>
+                        <ul>
                             <li>Python</li>
                             <li>SQL</li>
                             <li>Java</li>
                             <li>HTML</li>
                             <li>C++</li>
-                        </ol>
+                        </ul>
                     </td>
                     <td>Information Systems</td>
                     <td rowspan="7">Matplotlib, Cisco, Git, Jupyter, Excel, VSCode</td>
@@ -88,66 +86,42 @@
     </main>
 
     <aside class = "sidebar">
-        <h2>Multimedia</h2>
-        <iframe width="280" height="157"
-            src="https://www.youtube.com/embed/VEJWE6cpqw0"
-            frameborder="0" allowfullscreen></iframe> 
-        <audio controls>
-            <source src="Different Heaven  Safe And Sound  House  NCS  Copyright Free Music (1).mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-        </audio>
-        <section id = "form" >
-            <h2>Form</h2>
-            <p>Silahkan isi data Anda</p>
-            <form>
-                <table border="1" style="width: 50%; margin: auto;" >
-                    <tr>
-                        <td style="padding: 10px;"><label for="name">Nama Lengkap:</label></td>
-                        <td style="padding: 10px;"><input type="text" id="name" name="name" required></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px;"><label for="password">Password:</label></td>
-                        <td style="padding: 10px;"><input type="password" id="password" name="password"></td>
-                    </tr>
-                        <td style="padding: 10px;">Program Studi:</td>
-                        <td style="padding: 10px;">
-                            <select name = "Prodi" id ="prodi">
-                                <option value="Ilmu Komputer">Ilmu Komputer</option>
-                                <option value="Teknik Kimia">Teknik Kimia</option>
-                                <option value="Manajemen">Manajemen</option>
-                                <option value="Hubungan Internasional">Hubungan Internasional</option>
-                                <option value="Teknik Elektro">Teknik Elektro</option>
-                                <option value="Komunikasi">Komunikasi</option>
-                            </select>
-                        </td>
-                    <tr>
-                        <td style="padding: 10px;">Jenis Kelamin:</td>
-                        <td style="padding: 10px;">
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">Laki-laki</label> <br>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="female">Perempuan</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px;"><label for="address">Alamat:</label></td>
-                        <td style="padding: 10px;"><textarea id="address" name="address" rows="3" cols="50" placeholder="Isi Alamat Anda"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px;">Sudah bayar?</td>
-                        <td style="padding: 10px;">
-                            <input type="checkbox" id="paid" name="paid" value="yes">
-                            <label for="paid">Sudah</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align: center; padding: 10px;">
-                            <input type="submit" value="Submit">
-                            <input type="reset" value="Reset"></input>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div class = "Multimedia" id = "multimedia">
+            <h2>Multimedia</h2>
+            <iframe width="350" height="200"
+                src="https://www.youtube.com/embed/VEJWE6cpqw0"
+                frameborder="0" allowfullscreen></iframe> 
+            <audio controls>
+                <source src="Different Heaven  Safe And Sound  House  NCS  Copyright Free Music (1).mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <form id = "form" >
+            <h2>Hubungi Saya</h2>
+            <div class = "form-group">
+                <label for = "nama">Nama:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama">
+                <div class="error" id="namaError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email">
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon (format '+62xxx')">
+                <div class="error" id="phoneError"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan:</label>
+                <input type="text" id="message" name="message" placeholder="Tuliskan pesan anda disini">
+                <div class="error" id="messageError"></div>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <script src="script.js"></script>
     </aside>
     
     <footer class = "footer" id = "contact">
